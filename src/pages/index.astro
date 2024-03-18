@@ -1,0 +1,50 @@
+---
+import HorizontalCard from "../components/HorizontalCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Olá, obrigado por estar aqui 👋</div>
+    <div class="text-5xl font-bold">Eu sou Luiz Eduardo</div>
+    <div class="text-3xl py-3 font-bold">
+      Desenvolvedor Flutter e Empreendedor
+    </div>
+    <div class="py-2">
+      <text class="text-lg">
+        <p>
+          Trabalho no desenvolvimento de aplicações com
+          Flutter,especializando-me em gerência de estado com BloC, Provider,
+          MobX e aplicando conceitos como Observable e Clean Architecture.
+        </p>
+        <p>
+          Além de ter experiência com FlutterFlow, onde trabalhei com integração
+          de APIs personalizadas, Firebase, Supabase junto com performance e
+          segurança das aplicações.
+        </p>
+      </text>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Minhas skills {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Flutter/Dart"
+    img="/flutter_dart.png"
+    desc="Flutter é um framework de desenvolvimento de aplicativos móveis da Google, enquanto Dart é a linguagem de programação usada para escrever aplicativos Flutter. Juntos, eles oferecem uma plataforma poderosa para criar aplicativos nativos para Android, iOS e web de forma eficiente e com excelente desempenho."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FlutterFlow"
+    img="/flutterflow_logo.png"
+    desc="FlutterFlow é uma plataforma visual para construir aplicativos Flutter sem a necessidade de escrever código manualmente. Ele permite criar interfaces de usuário complexas e interativas através de um editor visual, acelerando o processo de desenvolvimento de aplicativos."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Firebase/Supabase"
+    img="/fb_sb.webp"
+    desc="Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web da Google que fornece uma variedade de serviços, como autenticação de usuários, armazenamento em nuvem, banco de dados em tempo real, entre outros. Por outro lado, o Supabase é uma alternativa open-source ao Firebase, oferecendo funcionalidades semelhantes, como autenticação, banco de dados em tempo real e armazenamento de arquivos, com foco na flexibilidade e controle do desenvolvedor sobre seus dados."
+  />
+</BaseLayout>

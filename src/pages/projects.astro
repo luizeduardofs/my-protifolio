@@ -1,0 +1,34 @@
+---
+import HorizontalCard from "../components/HorizontalCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projetos realizados</div>
+  </div>
+
+  <HorizontalCard
+    title="Painel Administrativo Rapidoc"
+    img="/rapidoc.png"
+    desc="Desenvolvi um aplicativo de gerenciamento de planos de saúde usando FlutterFlow, uma ferramenta poderosa para criar aplicativos Flutter de forma visual e eficiente. Neste projeto, integrei APIs personalizadas para fornecer funcionalidades avançadas, garantindo uma experiência de usuário fluida, responsiva e de alto desempenho."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="App Green Grocer"
+    img="/green-grocer.jpg"
+    desc="Desenvolvi um aplicativo de quitanda virtual utilizando o framework Flutter em conjunto com a linguagem Dart e a biblioteca GetX. Este projeto foi uma experiência fascinante que envolveu a criação de uma plataforma completa para compra de frutas, legumes e verduras de forma prática e intuitiva."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="App Smart Convert"
+    img="/smart-convert.png"
+    desc="Desenvolvi um aplicativo de conversor de dólar para real com o propósito de auxiliar usuários que desejam fazer compras no Paraguai. Este aplicativo, desenvolvido com Flutter e Dart, utiliza a biblioteca Provider para gerenciamento de estado e já está disponível para download na loja de aplicativos."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="PreviKids Calculadora"
+    img="/previkids.png"
+    desc="Desenvolvi um sistema de previdência privada voltado para crianças, implementando uma calculadora de juros simples e compostos. Utilizei JavaScript para criar uma aplicação web interativa que permite aos usuários simular investimentos ao longo do tempo, incentivando o planejamento financeiro desde cedo."
+  />
+</BaseLayout>

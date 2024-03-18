@@ -1,0 +1,90 @@
+---
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">PERFIL</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Com mais de 7 anos de experiência, trilhei meu percurso com tecnologiascomo
+    C#, React, JavaScript, TypeScript e Flutter. Atualmente, trabalho no
+    desenvolvimento de aplicações com Flutter,especializando-me em gerência de
+    estado com BloC, Provider, MobX eaplicando conceitos como Observable e Clean
+    Architecture. Falo 3 idiomas diferentes, e gosto de usar essas habilidades
+    para mecomunicar e me conectar com as pessoas. Me dedico 100% em tudo que
+    façoe tenho paixão por estudar e aprender novas tecnologias.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">HISTÓRICO ACADÊMICO</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Análise e desenvolvimento de sistemas"
+      subtitle="Em progresso"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">EXPERIÊNCIAS</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="RAPIDOC - TELEMEDICINA"
+      subtitle="Flutter/FlutterFlow Developer"
+    >
+      Como desenvolvedor Flutter e FlutterFlow , atuo na implementação de
+      software para uma healthcare. Minhas responsabilidades incluem a criação e
+      manutenção de interfacesde usuário atraentes e intuitivas. Meu papel
+      também abrange aotimização de desempenho, garantindo uma experiência
+      deusuário fluida e responsiva. Tendo uma atuação exclusiva nos principais
+      softwares da empresa.
+    </TimeLineElement>
+    <TimeLineElement
+      title="AZOS - TECNOLOGIA E CORRETAGEM DE SEGUROS"
+      subtitle="Engenheiro de Software Front-End"
+    >
+      Como engenheiro de software, atuei com React, Typescript, Axios,Jest em
+      aplicações web dinâmicas. Trabalhei dentro de metodologias ágeis como
+      Scrum e Kanban, participando de sprints para entregas ágeis. Utilizei Git
+      e GitHub para um versionamento de código. Além disso, fui responsável por
+      implementações usando Backend For Frontend (BFF).
+    </TimeLineElement>
+    <TimeLineElement
+      title="TECSYSTEM - SOLUÇÕES EM SOFTWARE"
+      subtitle="Desenvolvedor Web .NET"
+    >
+      Fui responsável pelo desenvolvimento e manutenção de aplicações utilizando
+      a plataforma .NET. Trabalhei ativamente na integração de sistemas,
+      utilizando C# e ASP.NET. Participando de processos ágeis, colaborei em
+      sprints regulares e implementei testes unitários para garantir a qualidade
+      do código.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">IDIOMAS</div>
+  </div>
+
+  <ul class="list-disc md:columns-4 columns-2 mx-6">
+    <li>Português (Nativo)</li>
+    <li>Inglês (Conversação)</li>
+    <li>Francês (Intermediário)</li>
+  </ul>
+
+  <div class="mb-5 mt-5">
+    <div class="text-3xl w-full font-bold">HABILIDADES</div>
+  </div>
+
+  <ul class="list-disc md:columns-4 columns-2 mx-6">
+    <li>Trabalho em equipe</li>
+    <li>Tomada de decisões</li>
+    <li>Boa comunicação</li>
+    <li>Inteligência emocional</li>
+  </ul>
+</BaseLayout>
