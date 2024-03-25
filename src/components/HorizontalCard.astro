@@ -1,5 +1,5 @@
 ---
-const { title, img, desc } = Astro.props;
+const { title, img, desc, url } = Astro.props;
 import { Image } from "astro:assets";
 ---
 
@@ -22,6 +22,17 @@ import { Image } from "astro:assets";
         {title}
       </h1>
       <p class="py-1 text-1xl">{desc}</p>
+      {
+        url === "" ? null : (
+          <a
+            class="text-blue-500 hover:text-blue-700"
+            href={url}
+            target="_blank"
+          >
+            Ver Projeto
+          </a>
+        )
+      }
     </div>
   </div>
 </div>
